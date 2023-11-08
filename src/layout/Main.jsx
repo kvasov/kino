@@ -23,7 +23,7 @@ class Main extends React.Component {
     })
 
     console.log(str, type)
-    const baseUrl = `http://www.omdbapi.com/?apikey=${API_KEY}`
+    const baseUrl = `https://www.omdbapi.com/?apikey=${API_KEY}`
     const typePath = type === 'all' ? '' : `&type=${type}`
     const searchPath = str.length ? `${str}` : `matrix`
     const fetchStr = `${baseUrl}&s=${searchPath}${typePath}`
